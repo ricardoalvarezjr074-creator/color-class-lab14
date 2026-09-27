@@ -7,7 +7,7 @@ class Color
     int red;
     int green;
     int blue;
-
+    // setter functions
     public:
     void setRed(int r)
     {
@@ -21,7 +21,7 @@ class Color
     {
         blue = b;
     }
-
+    // getter functions
     int getRed()
     {
         return red;
@@ -50,7 +50,7 @@ class Color
         Color color1;
         Color color2;
         Color color3;
-
+        //populate color values
         color1.setRed(255);
         color1.setGreen(0);
         color1.setBlue(0);
