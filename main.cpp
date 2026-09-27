@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class Color {
+class Color 
+{
     private: 
     int red;
     int green;
-    int bluew;
+    int blue;
+
     public:
     void setRed(int r)
     {
@@ -32,4 +34,41 @@ class Color {
     {
         return blue;
     }
-}
+
+    void print()
+    
+        {
+       cout << "Red: " << red
+       << " Green: " << green
+       << " Blue: " << blue << endl;
+        }
+
+};
+
+    int main()
+    {
+        Color color1;
+        Color color2;
+        Color color3;
+
+        color1.setRed(255);
+        color1.setGreen(0);
+        color1.setBlue(0);
+
+        color2.setRed(0);
+        color2.setGreen(255);
+        color2.setBlue(0);
+
+        color3.setRed(0);
+        color3.setGreen(0);
+        color3.setBlue(255);
+
+        cout << "Color Values:" << endl;
+        cout << "-------------" << endl;
+        color1.print();
+        color2.print();
+        color3.print();
+
+        return 0;
+    }
+
