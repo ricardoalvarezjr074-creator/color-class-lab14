@@ -3,12 +3,34 @@ using namespace std;
 
 class Color 
 {
-    private: 
+private: 
     int red;
     int green;
     int blue;
+
     // setter functions
     public:
+    Color()
+    {
+        red = 0;
+        green = 0;
+        blue = 0;
+    }
+
+    Color(int r, int g, int b)
+    {
+        red = r;
+        green = g;
+        blue = b;
+    }
+
+    Color(int r, int g)
+    {
+        red = r;
+        green = g;
+        blue = 0;
+    }
+    // setter functions
     void setRed(int r)
     {
         red = r;
@@ -34,7 +56,7 @@ class Color
     {
         return blue;
     }
-
+    // print function
     void print()
     
         {
